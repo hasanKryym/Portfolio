@@ -1,0 +1,45 @@
+.home_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+  width: 100vw;
+  max-width: 2000px;
+  min-height: 85vh;
+}
+
+.home_content > img {
+  width: 600px;
+  width: 50%;
+  min-width: 400px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.home_content .personal_info {
+  width: 400px;
+}
+
+.home_content .personal_info h3 {
+  color: var(--darkred);
+  font-size: 32px;
+}
+
+.home_content .personal_info span {
+}
+
+.home_content .personal_info p {
+  width: 80%;
+  text-align: justify;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .home_content {
+    gap: 2rem;
+  }
+  .home_content .personal_info p {
+    width: 100%;
+  }
+}
